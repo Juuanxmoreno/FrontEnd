@@ -1,0 +1,9 @@
+#texto {
+    text-align: justify;
+}
+#texto, #imagen {
+    display: inline-block;
+}
+img {
+    box-shadow: 10px -10px 25px black;
+}
