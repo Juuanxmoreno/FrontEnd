@@ -13,7 +13,8 @@
             <a href="https://github.com/Juuanxmoreno"><img src="../../../assets/github_logo.png" alt="GitHub"></a>
         </div>
         <div class="offset-1 col-3">
-            <button type="button" class="btn btn-outline-light">Login</button>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Login</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
         </div>
     </div>
 </div>
