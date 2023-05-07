@@ -10,7 +10,6 @@ import { LogoArgProgramaComponent } from './components/logo-arg-programa/logo-ar
 import { SocialAndLoginComponent } from './components/social-and-login/social-and-login.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-import { HardAndSoftSkillsComponent } from './components/hard-and-soft-skills/hard-and-soft-skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -22,6 +21,9 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditarEducacionComponent } from './components/educacion/editar-educacion.component';
+import { HardAndSoftSkillsComponent } from './components/hard-and-soft-skills/hard-and-soft-skills.component';
+import { EditarSkillComponent } from './components/hard-and-soft-skills/editar-skill.component';
+import { NewSkillComponent } from './components/hard-and-soft-skills/new-skill.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,6 @@ import { EditarEducacionComponent } from './components/educacion/editar-educacio
     SocialAndLoginComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HardAndSoftSkillsComponent,
     ProyectosComponent,
     FooterComponent,
     HomeComponent,
@@ -42,6 +43,9 @@ import { EditarEducacionComponent } from './components/educacion/editar-educacio
     EditarExperienciaComponent,
     NewEducacionComponent,
     EditarEducacionComponent,
+    HardAndSoftSkillsComponent,
+    EditarSkillComponent,
+    NewSkillComponent,
   ],
   imports: [
     BrowserModule,
