@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Experiencia } from 'src/app/model/experiencia';
 import { ServiceExperienciaService } from 'src/app/service/service-experiencia.service';
@@ -8,7 +8,7 @@ import { ServiceExperienciaService } from 'src/app/service/service-experiencia.s
   templateUrl: './editar-experiencia.component.html',
   styleUrls: ['./editar-experiencia.component.css']
 })
-export class EditarExperienciaComponent {
+export class EditarExperienciaComponent implements OnInit{
   experiencia: Experiencia = null;
 
   constructor(private serviceExperiencia: ServiceExperienciaService, private activatedRouter: ActivatedRoute, private router: Router) {}

@@ -1,8 +1,11 @@
-img {
-    height: 48px;
-    width: 48px;
-}
 .btn {
-    height: 48px;
     border-width: 2.5px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    margin-right: 5px;
 }

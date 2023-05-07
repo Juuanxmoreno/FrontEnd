@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/service/educacion.service';
 import { TokenService } from 'src/app/service/token.service';
@@ -8,7 +8,7 @@ import { TokenService } from 'src/app/service/token.service';
   templateUrl: './educacion.component.html',
   styleUrls: ['./educacion.component.css']
 })
-export class EducacionComponent {
+export class EducacionComponent implements OnInit {
   educacion: Educacion[] = [];
 
   constructor(private serviceEducacion: EducacionService, private tokenService: TokenService) {}

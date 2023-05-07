@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { ServiceExperienciaService } from 'src/app/service/service-experiencia.service';
 import { TokenService } from 'src/app/service/token.service';
@@ -8,7 +8,7 @@ import { TokenService } from 'src/app/service/token.service';
   templateUrl: './experiencia.component.html',
   styleUrls: ['./experiencia.component.css']
 })
-export class ExperienciaComponent {
+export class ExperienciaComponent implements OnInit{
   experiencia: Experiencia[] = [];
 
   constructor(private serviceExperiencia: ServiceExperienciaService, private tokenService: TokenService) {}
