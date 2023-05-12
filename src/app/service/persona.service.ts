@@ -7,7 +7,7 @@ import { Persona } from '../model/persona';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'http://localhost:8080/personas/'
+  URL = 'https://backendjcm.onrender.com/personas/'
 
   constructor(private httpClient: HttpClient) { }
 

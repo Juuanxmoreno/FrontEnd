@@ -25,6 +25,7 @@ import { HardAndSoftSkillsComponent } from './components/hard-and-soft-skills/ha
 import { EditarSkillComponent } from './components/hard-and-soft-skills/editar-skill.component';
 import { NewSkillComponent } from './components/hard-and-soft-skills/new-skill.component';
 import { EditarPerfilComponent } from './components/acerca-de/editar-perfil.component';
+import { environment } from './../environments/environment'
 
 @NgModule({
   declarations: [

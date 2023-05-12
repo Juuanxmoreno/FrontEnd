@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "portfolio-argprograma-jcm"
+  },
+  "targets": {
+    "portfolio-argprograma-jcm": {
+      "hosting": {
+        "FrontEnd": [
+          "portfolio-argprograma-jcm"
+        ]
+      }
+    }
+  }
+}

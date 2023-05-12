@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "FrontEnd:build:production",
+            "firebaseProject": "portfolio-argprograma-jcm",
+            "firebaseHostingSite": "portfolio-argprograma-jcm"
+          }
         }
       }
     }

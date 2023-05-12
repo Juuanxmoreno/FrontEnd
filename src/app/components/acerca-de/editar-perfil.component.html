@@ -1,26 +1,27 @@
 <div class="container">
     <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="persona.nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" name="apellido" id="apellido" [(ngModel)]="persona.apellido" required>
-                </div>
-                <div class="form-group">
-                    <label for="acercaDe">Acerca de</label>
-                    <input type="text" class="form-control" name="acercaDe" id="acercaDe" [(ngModel)]="persona.acercaDe" required>
-                </div>
-                <div class="form-group">
-                    <label for="img">Imagen</label>
-                    <input type="file" class="form-control" name="img" id="img" [(ngModel)]="persona.img" (change)="uploadImg($event)" accept=".jpg, .jpeg, .png">
-                </div>
-
-                <button class="btn btn-secondary">Actualizar</button>
-            </form>
-        </div>
+      <div class="form-container">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="persona.nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" name="apellido" id="apellido" [(ngModel)]="persona.apellido" required>
+          </div>
+          <div class="form-group">
+            <label for="acercaDe">Acerca de</label>
+            <input type="text" class="form-control" name="acercaDe" id="acercaDe" [(ngModel)]="persona.acercaDe" required>
+          </div>
+          <div class="form-group">
+            <label for="img">Imagen</label>
+            <input type="file" class="form-control" name="img" id="img" [(ngModel)]="persona.img" (change)="uploadImages($event)" accept=".jpg, .jpeg, .png">
+          </div>
+  
+          <button class="btn btn-primary">Actualizar</button>
+        </form>
+      </div>
     </div>
-</div>
+  </div>
+  

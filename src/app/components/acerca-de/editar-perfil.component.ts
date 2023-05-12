@@ -2,16 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Persona } from 'src/app/model/persona';
 import { PersonaService } from 'src/app/service/persona.service';
+import { StorageService } from 'src/app/service/storage.service';
 
 @Component({
   selector: 'app-editar-perfil',
   templateUrl: './editar-perfil.component.html',
   styleUrls: ['./editar-perfil.component.css']
 })
-export class EditarPerfilComponent implements OnInit{
+export class EditarPerfilComponent implements OnInit {
   persona: Persona = null;
 
-  constructor(private servicePersona: PersonaService, private activatedRoute: ActivatedRoute, private router: Router) {}
+  constructor(private servicePersona: PersonaService, private activatedRoute: ActivatedRoute, private router: Router, private storageService: StorageService) { }
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.params['id'];
@@ -21,18 +22,32 @@ export class EditarPerfilComponent implements OnInit{
     })
   }
 
-  onUpdate(){
+  onUpdate() {
     const id = this.activatedRoute.snapshot.params['id'];
+    this.persona.img = this.storageService.url;
     this.servicePersona.update(id, this.persona).subscribe(data => {
       this.router.navigate(['']);
     }, err => {
-      alert("Error al modificar la educación");
+      alert("Error al editar el perfil");
       this.router.navigate([''])
     })
   }
 
-  uploadImg($event:any){
+  imagenes: any[] = [];
+  uploadImages(event: any) {
+    let archivos = event.target.files;
+    let reader = new FileReader();
+    let nombre = "Perfil_"
+    let id = this.activatedRoute.snapshot.params['id']
 
+    reader.readAsDataURL(archivos[0]);
+    reader.onloadend = () => {
+      console.log(reader.result)
+      this.imagenes.push(reader.result);
+      this.storageService.subirImagen(nombre + id, reader.result).then(urlImagen => {
+        console.log(urlImagen)
+      });
+    }
   }
 
 }
