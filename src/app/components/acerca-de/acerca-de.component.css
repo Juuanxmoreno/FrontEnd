@@ -1,7 +1,19 @@
-.row {
-
-}
 #foto-perfil {
     border-radius: 100%;
     box-shadow: 3px 3px 3px gray;
+}
+
+button {
+    background-color: #34495E;
+    color: white;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #34495E;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
 }

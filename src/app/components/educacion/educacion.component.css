@@ -1,3 +1,18 @@
+.row{
+    margin-left: 8px;
+}
 h4 {
     display: inline;
+}
+#addbtn {
+    background-color: #34495E;
+    color: white;
+}
+#addbtn:hover {
+    background-color: #34495E;
+    color: white;
+}
+
+#addbtn:active {
+    transform: scale(0.95);
 }

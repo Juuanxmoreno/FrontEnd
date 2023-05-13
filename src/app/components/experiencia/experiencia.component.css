@@ -1,0 +1,16 @@
+.row{
+    margin-left: 10px;
+}
+#addbtn {
+    background-color: #34495E;
+    color: white;
+
+}
+#addbtn:hover {
+    background-color: #34495E;
+    color: white;
+}
+
+#addbtn:active {
+    transform: scale(0.95);
+}

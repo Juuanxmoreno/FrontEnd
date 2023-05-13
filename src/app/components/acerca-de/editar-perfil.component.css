@@ -31,13 +31,24 @@
     border-radius: 4px;
   }
   
-  .btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #34495E;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #34495E;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
+}

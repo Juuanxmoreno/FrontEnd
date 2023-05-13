@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ServiceExperienciaService {
-  ExperienciaURL = 'https://backendjcm.onrender.com/experiencia/'
+  ExperienciaURL = 'http://localhost:8080/experiencia/'
   constructor(private httpClient: HttpClient) { }
 
   public lista():Observable<Experiencia[]>{
