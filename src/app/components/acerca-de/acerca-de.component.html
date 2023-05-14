@@ -1,16 +1,17 @@
 <div class="row">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 position-relative">
-        <img [src]="persona.img" alt="Foto de perfil" class="img-fluid" id="foto-perfil">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 position-relative">
+        <div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
+            <img [src]="persona.img" alt="Foto de perfil" class="img-fluid" id="foto-perfil">
+            <div style="text-align: center;">
+                <h2 id="nombre" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><b>{{persona.nombre}} {{persona.apellido}}</b></h2>
+                <p id="area" style="font-family: Copperplate-Bold;"><b>Desarrollador Web Full Stack Jr</b></p>
+                <button type="button" class="btn" routerLink="editarPerfil/1" *ngIf="isLogged">Editar perfil</button>
+            </div>
+        </div>
     </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <h2 id="nombre"><b>{{persona.nombre}} {{persona.apellido}}</b></h2>
-        <p><b>Desarrollador Web Full Stack Jr</b></p>
-    </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <h3><b>Acerca de</b></h3>
-        <p>{{persona.acercaDe}}</p>
-    </div>
-    <div class="col-lg-12">
-        <button type="button" class="btn" routerLink="editarPerfil/1" *ngIf="isLogged">Editar perfil</button>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="acercaDe">
+        <h3 class="text-center"><b style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Acerca de mí</b></h3>
+        <p style="text-align: justify; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" id="acercaDeText">{{persona.acercaDe}}</p>
     </div>
 </div>
+

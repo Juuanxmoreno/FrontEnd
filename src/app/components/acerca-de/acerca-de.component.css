@@ -1,12 +1,18 @@
+.row{
+    margin-left: 10px;
+}
+
 #foto-perfil {
     border-radius: 100%;
     box-shadow: 3px 3px 3px gray;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
 }
 
 button {
     background-color: #34495E;
     color: white;
-    margin-left: 10px;
 }
 
 button:hover {
@@ -16,4 +22,12 @@ button:hover {
 
 button:active {
     transform: scale(0.95);
+}
+
+#acercaDe{
+    margin-top: 40px;
+}
+
+#acercaDeText{
+    margin-top: 20px;
 }

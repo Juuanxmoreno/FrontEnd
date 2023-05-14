@@ -1,6 +1,18 @@
 html, body {
-
     max-width: 100% !important;
     overflow-x: hidden !important;
-    background-color: #F3D1FF;
+    background-color: #A2C6D0;
+}
+
+@font-face {
+    font-family: 'Copperplate';
+    src: url('/src/assets/Fonts/Copperplate.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Copperplate-Bold';
+    src: url('/src/assets/Fonts/CopperplateBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('/src/assets/Fonts/Bebas/BebasNeue-Regular.ttf') format('truetype');
 }

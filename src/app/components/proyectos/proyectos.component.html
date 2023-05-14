@@ -1,31 +1,25 @@
 <div class="row">
-
-    <h3><b>Proyectos</b></h3>
+    <div class="col-12 text-center">
+    <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="title"><b>Proyectos</b></h3>
+    </div>
     <div class="col-12">
-        <button type="button" routerLink="/nuevaSkill" class="btn" id="addbtn" *ngIf="isLogged"
-            routerLink="/nuevoProyecto">Añadir proyecto</button>
+        <button type="button" routerLink="/nuevaSkill" class="btn" id="addbtn" *ngIf="isLogged" routerLink="/nuevoProyecto">Añadir proyecto</button>
     </div>
 
-    <div *ngFor="let Proyectos of proyectos">
-
-        <div class="col-6 d-flex align-items-center">
-            <h3>{{Proyectos.nombre}}</h3>
-            <button class="btn btn-danger" id="btndelete" *ngIf="isLogged" (click)="deleteProyectos(Proyectos.id)">
-                <i class="bi bi-trash"></i>
-            </button>
-        </div>
-
-
-        <div class="col-6">
-            <p>{{Proyectos.descripcion}}</p>
-        </div>
-        <div class="col-6">
-            <img [src]="Proyectos.imagen" alt="" class="img-fluid">
-        </div>
-
-        <div>
-            <br>
+    <div *ngFor="let Proyectos of proyectos" class="col-12">
+        <div class="d-flex align-items-center">
+            <div class="col-6">
+                <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    {{Proyectos.nombre}}
+                    <button class="btn btn-danger ml-3" id="btndelete" *ngIf="isLogged" (click)="deleteProyectos(Proyectos.id)">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </h3>
+                <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{Proyectos.descripcion}}</p>
+            </div>
+            <div class="col-6">
+                <a href="https://portfolio-argprograma-jcm.web.app/"><img [src]="Proyectos.imagen" alt="" class="img-fluid"></a>
+            </div>
         </div>
     </div>
-
 </div>

@@ -1,5 +1,7 @@
 <div class="row">
-    <h3><b>Experiencia</b></h3>
+    <div class="col-12 text-center">
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="title"><b>Experiencia</b></h3>
+    </div>
     <div class="col-lg-2">
         <button type="button" class="btn" id="addbtn" routerLink="/nuevaExperiencia" *ngIf="isLogged">Añadir Experiencia</button>
     </div>
@@ -9,9 +11,9 @@
             <tbody>
                 <tr *ngFor="let Experiencia of experiencia">
                     <td>
-                        <h4>{{Experiencia.nombreExperiencia}}</h4>
+                        <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{Experiencia.nombreExperiencia}}</h4>
                     </td>
-                    <td>{{Experiencia.descripcionExperiencia}}</td>
+                    <td style="font-family: Copperplate; font-size: large;">{{Experiencia.descripcionExperiencia}}</td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-light"><i class="bi bi-pencil" routerLink="/editarExperiencia/{{Experiencia.id}}"></i></button>
                     </td>

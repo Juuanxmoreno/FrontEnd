@@ -1,7 +1,9 @@
 <div class="row">
-    <h3><b>Educación</b></h3>
+    <div class="col-12 text-center">
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="title"><b>Educación</b></h3>
+    </div>
     <div class="col-lg-2">
-        <button type="button" class="btn" id="addbtn" routerLink="/nuevaEducacion" *ngIf="isLogged">Añadir Educación</button>
+        <button type="button" class="btn" id="addbtn" routerLink="/nuevaEducacion" *ngIf="isLogged" style="font-family: Bebas;">Añadir Educación</button>
     </div>
     <div class="col lg 1"></div>
     <div class="col-lg-11">
@@ -9,9 +11,9 @@
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
                     <td>
-                        <h4>{{Educacion.nombreEducacion}}</h4>
+                        <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{Educacion.nombreEducacion}}</h4>
                     </td>
-                    <td>{{Educacion.descripcionEducacion}}</td>
+                    <td style="font-family: Copperplate; font-size: large;">{{Educacion.descripcionEducacion}}</td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-light"><i class="bi bi-pencil" routerLink="editarEducacion/{{Educacion.id}}"></i></button>
                     </td>

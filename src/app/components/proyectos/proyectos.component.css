@@ -1,5 +1,9 @@
 .row{
     margin-left: 10px;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2) inset;
+}
+h3{
+    margin-top: 20px;
 }
 #texto {
     text-align: justify;
@@ -21,11 +25,15 @@
     transform: scale(0.95);
 }
 img{
-    box-shadow: 10px -10px 10px black;
+    box-shadow: 6px -6px 8px black;
     width: 300px;
     height: 150px;
 }
 
 #btndelete{
     margin-left: 10px;
+}
+.title{
+    display: flex;
+    justify-content: center;
 }
