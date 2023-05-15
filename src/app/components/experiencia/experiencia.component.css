@@ -6,11 +6,13 @@
 } 
 h3{
     margin-top: 20px;
+    color: #34495E;
 }
 td{
     border: none;
 }
 #addbtn {
+    font-family: 'Martian Mono';
     background-color: #34495E;
     color: white;
 }

@@ -1,9 +1,12 @@
 .row{
     margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2) inset;
 }
 h3{
     margin-top: 20px;
+    color: #34495E;
+    padding-bottom: 10px;
 }
 #texto {
     text-align: justify;
@@ -13,6 +16,7 @@ h3{
 }
 
 #addbtn {
+    font-family: 'Martian Mono';
     background-color: #34495E;
     color: white;
 }
@@ -24,11 +28,16 @@ h3{
 #addbtn:active {
     transform: scale(0.95);
 }
-img{
-    box-shadow: 6px -6px 8px black;
+img {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
     width: 300px;
     height: 150px;
+    transition: box-shadow 0.3s ease-in-out;
 }
+img:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4), 8px 0px 20px rgba(0, 0, 0, 0.4);
+}  
 
 #btndelete{
     margin-left: 10px;
@@ -37,3 +46,15 @@ img{
     display: flex;
     justify-content: center;
 }
+@media (max-width: 576px) {
+    .d-flex.align-items-center {
+      flex-wrap: wrap;
+    }
+    .col-6 {
+      flex-basis: 100%;
+    }
+    h3{
+        padding-bottom: 0;
+    }
+  }
+  

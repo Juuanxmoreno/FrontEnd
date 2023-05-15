@@ -4,6 +4,7 @@ html, body {
     background-color: #A2C6D0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
 @font-face {
     font-family: 'Copperplate';
     src: url('/src/assets/Fonts/Copperplate.ttf') format('truetype');
@@ -11,8 +12,4 @@ html, body {
 @font-face {
     font-family: 'Copperplate-Bold';
     src: url('/src/assets/Fonts/CopperplateBold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Bebas';
-    src: url('/src/assets/Fonts/Bebas/BebasNeue-Regular.ttf') format('truetype');
 }

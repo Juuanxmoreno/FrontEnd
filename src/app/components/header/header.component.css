@@ -1,8 +1,38 @@
 *{
     background-color: #34495E;
 }
+
 app-social-and-login {
     float: right;
     margin-top: 24px;
     margin-right: 24px;
 }
+
+@media (max-width: 768px) {
+    .col-md-12,
+    .col-lg-12 {
+        width: 100%;
+    }
+    
+    .col-md-12,
+    .col-lg-12,
+    app-social-and-login {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .centered {
+        text-align: center;
+    }
+    
+    .centered app-social-and-login {
+        float: none;
+    }
+    .centered app-logo-arg-programa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
